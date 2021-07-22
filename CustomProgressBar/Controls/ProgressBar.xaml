@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Grid
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="CustomProgressBar.Controls.CustomProgressBar"
+    x:Name="customProgressBarControl">
+
+    <Grid
+        BindingContext="{x:Reference customProgressBarControl}">
+
+        <Frame
+            BorderColor="{Binding BorderColor}"
+            x:Name="baseFrame"
+            HorizontalOptions="FillAndExpand"
+            CornerRadius="{Binding CornerRadius}"
+            HasShadow="False"
+            BackgroundColor="{Binding EmptyAreaColor}"
+            Padding="0"/>
+
+        <Frame
+            x:Name="progressFrame"
+            Grid.Column="0"
+            Grid.Row="0"
+            BindingContext="{x:Reference customProgressBarControl}"
+            HorizontalOptions="Start"
+            CornerRadius="{Binding CornerRadius}"
+            HasShadow="False"
+            Margin="1"
+            Padding="0"/>
+
+        <Label
+            x:Name="progressLabel"
+            Grid.Column="0"
+            Grid.Row="0"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            FontSize="{Binding ProgressFontSize}"
+            TextColor="{Binding ProgressTextColor}"/>
+    </Grid>
+</Grid>

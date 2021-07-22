@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:customControls="clr-namespace:CustomProgressBar.Controls;"
+             x:Class="CustomProgressBar.Pages.MainPage">
+
+    <StackLayout
+        Padding="20,40">
+        <Frame
+            BackgroundColor="#2196F3"
+            Padding="24"
+            CornerRadius="0">
+
+            <Label
+                Text="Welcome to Xamarin.Forms!"
+                HorizontalTextAlignment="Center"
+                TextColor="White"
+                FontSize="36"/>
+        </Frame>
+        
+        <customControls:CustomProgressBar
+            Margin="10"
+            BorderColor="LightBlue"
+            HeightRequest="30"
+            StartColor="Blue"
+            StopColor="Lime"
+            BrushRadius="0.9"
+            ProgressFontSize="18"
+            CornerRadius="10"
+            ProgressTextColor="White"
+            BackgroudBrush="{Binding SelectedBrush}"
+            x:Name="customControl"/>
+
+        <Picker
+            VerticalOptions="EndAndExpand"
+            HorizontalOptions="Center"
+            Title="Select picker brush type"
+            BackgroundColor="#2196F3"
+            TextColor="White"
+            HorizontalTextAlignment="Center"
+            ItemsSource="{Binding BrushTypesList}"
+            SelectedIndex="0"
+            SelectedItem="{Binding SelectedBrush}"/>
+
+        <Button
+            Text="Let's make progress!"
+            Margin="10"
+            BackgroundColor="#2196F3"
+            Clicked="OnButtonClicked"
+            TextColor="White">
+        </Button>
+
+    </StackLayout>
+
+</ContentPage>

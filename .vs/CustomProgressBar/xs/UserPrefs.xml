@@ -1,0 +1,43 @@
+﻿<Properties StartupConfiguration="{651BAE2F-31A3-4770-9FFD-FD9FDD38F062}|Default">
+  <MonoDevelop.Ide.ItemProperties.CustomProgressBar.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget." />
+  <MonoDevelop.Ide.Workbench ActiveDocument="CustomProgressBar/PageModels/MainPageModel.cs">
+    <Files>
+      <File FileName="CustomProgressBar/Controls/ProgressBar.xaml" Line="17" Column="54" IsPinned="True" />
+      <File FileName="CustomProgressBar/Controls/ProgressBar.xaml.cs" Line="189" Column="34" />
+      <File FileName="CustomProgressBar/Enums/BackgroudBrushType.cs" Line="3" Column="17" />
+      <File FileName="CustomProgressBar/App.xaml.cs" Line="13" Column="1" />
+      <File FileName="CustomProgressBar/Pages/MainPage.xaml" Line="25" Column="42" />
+      <File FileName="CustomProgressBar/PageModels/MainPageViewModel.cs" Line="13" Column="23" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CustomProgressBar" expanded="True">
+            <Node name="CustomProgressBar" expanded="True">
+              <Node name="Controls" expanded="True">
+                <Node name="ProgressBar.xaml" expanded="True" />
+              </Node>
+              <Node name="Enums" expanded="True" />
+              <Node name="PageModels" expanded="True">
+                <Node name="MainPageModel.cs" selected="True" />
+              </Node>
+              <Node name="Pages" expanded="True">
+                <Node name="MainPage.xaml" expanded="True" />
+              </Node>
+              <Node name="App.xaml" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="../../../../../PROG/SospesMobile/SafetyProduct/Helpers/UI/Converters/IntToBoolConverter.cs" line="20" column="24" endLine="20" endColumn="29" offsetX="-1" offsetY="-1" expression="value" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+  <MonoDevelop.Ide.ItemProperties.CustomProgressBar.Android PreferredExecutionTarget="Android.pixel_2_r_11_0_-_api_30" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
