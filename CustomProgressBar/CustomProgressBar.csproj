@@ -22,14 +22,14 @@
   <ItemGroup>
     <None Remove="Controls\" />
     <None Remove="Views\" />
-    <None Remove="ViewModels\" />
     <None Remove="Enums\" />
     <None Remove="FreshMvvm" />
+    <None Remove="Resources\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controls\" />
     <Folder Include="Pages\" />
-    <Folder Include="ViewModels\" />
     <Folder Include="Enums\" />
+    <Folder Include="Resources\" />
   </ItemGroup>
 </Project>

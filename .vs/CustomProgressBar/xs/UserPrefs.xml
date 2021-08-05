@@ -1,31 +1,28 @@
-﻿<Properties StartupConfiguration="{651BAE2F-31A3-4770-9FFD-FD9FDD38F062}|Default">
-  <MonoDevelop.Ide.ItemProperties.CustomProgressBar.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget." />
+﻿<Properties StartupConfiguration="{5B90A6BB-1CAC-41CE-BD57-7B9844A3DFE1}|Default">
+  <MonoDevelop.Ide.ItemProperties.CustomProgressBar.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.2E3A3DAC-9A60-4154-B104-157C675D7C65" />
   <MonoDevelop.Ide.Workbench ActiveDocument="CustomProgressBar/PageModels/MainPageModel.cs">
     <Files>
-      <File FileName="CustomProgressBar/Controls/ProgressBar.xaml" Line="17" Column="54" IsPinned="True" />
-      <File FileName="CustomProgressBar/Controls/ProgressBar.xaml.cs" Line="189" Column="34" />
-      <File FileName="CustomProgressBar/Enums/BackgroudBrushType.cs" Line="3" Column="17" />
-      <File FileName="CustomProgressBar/App.xaml.cs" Line="13" Column="1" />
-      <File FileName="CustomProgressBar/Pages/MainPage.xaml" Line="25" Column="42" />
-      <File FileName="CustomProgressBar/PageModels/MainPageViewModel.cs" Line="13" Column="23" />
+      <File FileName="CustomProgressBar/Controls/ProgressBar.xaml" Line="17" Column="39" IsPinned="True" />
+      <File FileName="CustomProgressBar/Controls/ProgressBar.xaml.cs" Line="90" Column="23" />
+      <File FileName="CustomProgressBar/Enums/BackgroudBrushType.cs" Line="8" Column="28" />
+      <File FileName="CustomProgressBar/App.xaml.cs" />
+      <File FileName="CustomProgressBar/Pages/MainPage.xaml" Line="33" Column="36" />
+      <File FileName="CustomProgressBar/PageModels/MainPageModel.cs" Line="77" Column="51" />
+      <File FileName="CustomProgressBar/Contstants.cs" Line="8" Column="1" />
+      <File FileName="CustomProgressBar.iOS/Info.plist" />
+      <File FileName="CustomProgressBar/App.xaml" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="CustomProgressBar" expanded="True">
             <Node name="CustomProgressBar" expanded="True">
-              <Node name="Controls" expanded="True">
-                <Node name="ProgressBar.xaml" expanded="True" />
-              </Node>
-              <Node name="Enums" expanded="True" />
               <Node name="PageModels" expanded="True">
                 <Node name="MainPageModel.cs" selected="True" />
               </Node>
-              <Node name="Pages" expanded="True">
-                <Node name="MainPage.xaml" expanded="True" />
-              </Node>
-              <Node name="App.xaml" expanded="True" />
+              <Node name="Resources" expanded="True" />
             </Node>
+            <Node name="CustomProgressBar.iOS" expanded="True" />
           </Node>
         </State>
       </Pad>

@@ -1,11 +1,12 @@
 ﻿using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using CustomProgressBar.Enums;
+using CustomProgressBar.Resources;
 using Xamarin.Forms;
 
 namespace CustomProgressBar.Controls
 {
-    public partial class CustomProgressBar : Grid
+    public partial class CustomProgressBar : ContentView
     {
         #region Public Properties
 
@@ -17,7 +18,7 @@ namespace CustomProgressBar.Controls
             typeof(CustomProgressBar));
 
         /// <summary>
-        /// value from 0 to 1
+        /// Image for bg - when ImageBrush will be implemented
         /// </summary>
         public ImageSource BgImage
         {
@@ -34,7 +35,7 @@ namespace CustomProgressBar.Controls
             defaultValue: default(float));
 
         /// <summary>
-        /// value from 0 to 1
+        /// value from 0.0 to 1.0
         /// </summary>
         public float CornerRadius
         {
@@ -51,7 +52,7 @@ namespace CustomProgressBar.Controls
             defaultValue: 14.0d);
 
         /// <summary>
-        /// value from 0 to 1
+        /// Label's font size
         /// </summary>
         public double ProgressFontSize
         {
@@ -68,7 +69,7 @@ namespace CustomProgressBar.Controls
             defaultValue: 0.5);
 
         /// <summary>
-        /// value from 0 to 1
+        /// value from 0.0 to 1.0 for RadialBrush only
         /// </summary>
         public double BrushRadius
         {
@@ -85,7 +86,7 @@ namespace CustomProgressBar.Controls
             defaultValue: default(double));
 
         /// <summary>
-        /// value from 0 to 1
+        /// value from 0.0 to 1.0
         /// </summary>
         public double Progress
         {
@@ -101,7 +102,7 @@ namespace CustomProgressBar.Controls
             typeof(CustomProgressBar));
 
         /// <summary>
-        /// type of brush
+        /// Type of brush
         /// </summary>
         public BackgroudBrushType BackgroudBrush
         {
@@ -135,7 +136,7 @@ namespace CustomProgressBar.Controls
              defaultValue: Color.Transparent);
 
         /// <summary>
-        /// Progress bar border color
+        /// Start color for LinearGradientBrush and RadialGradientBrush
         /// </summary>
         public Color StartColor
         {
@@ -152,7 +153,7 @@ namespace CustomProgressBar.Controls
              defaultValue: Color.Transparent);
 
         /// <summary>
-        /// Progress bar border color
+        /// Stop color for LinearGradientBrush and RadialGradientBrush
         /// </summary>
         public Color StopColor
         {
@@ -215,9 +216,9 @@ namespace CustomProgressBar.Controls
 
                 double mainFrameWidth = this.baseFrame.Width;
 
-                for (int i = 0; i < Progress * 100; i++)
+                for (int i = 0; i < Progress * Constants.MAX_PERCENT_VALUE; i++)
                 {
-                    this.progressFrame.WidthRequest = (i * mainFrameWidth) / 100;
+                    this.progressFrame.WidthRequest = (i * mainFrameWidth) / Constants.MAX_PERCENT_VALUE;
 
                     if (i % 2 == 0)
                     {
@@ -246,9 +247,9 @@ namespace CustomProgressBar.Controls
                             };
 
                             background.GradientStops.Add(
-                               new GradientStop(StartColor, 0.0f));
+                               new GradientStop(StartColor, 0.25f));
                             background.GradientStops.Add(
-                                new GradientStop(StopColor, 0.5f));
+                                new GradientStop(StopColor, 0.75f));
 
                             this.progressFrame.Background = background;
                         }

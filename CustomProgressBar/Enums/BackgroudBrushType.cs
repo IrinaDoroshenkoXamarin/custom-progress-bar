@@ -2,8 +2,9 @@
 {
     public enum BackgroudBrushType
     {
-        SolidColorBrush = 1,
-        RadialGradientBrush = 2,
-        LinearGradientBrush = 3
+        None,
+        SolidColorBrush,
+        RadialGradientBrush,
+        LinearGradientBrush
     }
 }
