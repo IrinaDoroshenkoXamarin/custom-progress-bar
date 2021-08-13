@@ -216,7 +216,7 @@ namespace CustomProgressBar.Controls
 
                 double mainFrameWidth = this.baseFrame.Width;
 
-                for (int i = 0; i < Progress * Constants.MAX_PERCENT_VALUE; i++)
+                for (int i = 0; i <= Progress * Constants.MAX_PERCENT_VALUE; i++)
                 {
                     this.progressFrame.WidthRequest = (i * mainFrameWidth) / Constants.MAX_PERCENT_VALUE;
 
