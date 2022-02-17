@@ -18,7 +18,7 @@
                 TextColor="White"
                 FontSize="36"/>
         </Frame>
-        
+
         <customControls:CustomProgressBar
             Margin="10"
             BorderColor="LightBlue"
@@ -33,6 +33,14 @@
             EmptyAreaColor="#EAF2F8"
             BackgroudBrush="{Binding SelectedBrush}"
             x:Name="customControl"/>
+
+        <customControls:CustomSwitcher
+            HorizontalOptions="Center"/>
+        <customControls:CustomSwitcher
+            HorizontalOptions="Center"/>
+        <customControls:CustomSwitcher
+            HorizontalOptions="Center"/>
+
 
         <Picker
             VerticalOptions="EndAndExpand"

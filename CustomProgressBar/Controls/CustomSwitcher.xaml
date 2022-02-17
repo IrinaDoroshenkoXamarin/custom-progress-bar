@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="CustomProgressBar.Controls.CustomSwitcher"
+    x:Name="customSwitcherControl">
+
+        <Frame
+        HasShadow="False"
+        HeightRequest="29"
+        WidthRequest="54"
+        x:Name="mainFrame"
+        Padding="0"
+        BackgroundColor="LightGray"
+        BorderColor="White"
+        CornerRadius="12">
+
+            <ContentView
+            Padding="2"
+            BackgroundColor="Transparent"
+            HeightRequest="30"
+            VerticalOptions="Center"
+            WidthRequest="50">
+
+                <Button
+                x:Name="switcherButton"
+                HorizontalOptions="Start"
+                    InputTransparent="True"
+                VerticalOptions="Center"
+            BackgroundColor="White"
+            HeightRequest="24"
+            WidthRequest="24"
+            CornerRadius="12"/>
+                <ContentView.GestureRecognizers>
+                    <TapGestureRecognizer x:Name="buttonTapRecognizer"/>
+                </ContentView.GestureRecognizers>
+            </ContentView>
+        </Frame>
+</ContentView>
